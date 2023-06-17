@@ -1,6 +1,6 @@
 @font-face {
     font-family: WorkSans;
-    src: url("/src/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+    src: url("./src/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
 }
 
 :root{
