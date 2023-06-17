@@ -517,7 +517,10 @@ a{
         width: 40px;
         height: 23px;
     }
-
+    .header .hamburger-close:hover,
+    .header .header_nav .hamburger:hover{
+        cursor: pointer;
+    }
     .header .hamburger-close{
         width: 40px;
         height: 23px;
