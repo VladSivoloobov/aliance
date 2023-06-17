@@ -295,6 +295,7 @@ a{
     color: #5B6E76;
     font-family: WorkSans;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .main .address-with-form .right-side .phone-input, 
