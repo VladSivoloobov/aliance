@@ -59,8 +59,6 @@ function checkDirection(callback) {
 function createSwipeSlider(element, dots, [leftBound, rightBound], margin = 0) {
   let currentSlidePosition = 0;
   return (right) => {
-    console.log(currentSlidePosition);
-
     if (!right) {
       if (currentSlidePosition + 100 >= rightBound) {
         return;
@@ -88,22 +86,10 @@ function changeActiveDot(offset, dotsArray) {
   } else {
     currentDotNumber = offset / 100;
   }
-  console.log(currentDotNumber);
+
   dotsArray.forEach((v) => {
     v.classList.remove("active");
   });
 
   dotsArray[Math.floor(currentDotNumber)].classList.add("active");
 }
-
-const input = document.querySelector("#tel");
-const maskOptions = {
-  mask: "000-000-0000",
-};
-
-const mask = new IMask(input, maskOptions);
-
-const maskInput = document.querySelector(".mask");
-input.addEventListener("change", (e) => {
-  maskInput.value = e.target.value;
-});
