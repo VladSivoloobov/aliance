@@ -512,7 +512,7 @@ textarea{
     background-color: #ECB51D;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
     .header .header_nav .nav_links,
     .header .header_nav .nav_phone-number,
     .header .header_nav .nav_get-button{
@@ -521,7 +521,7 @@ textarea{
 
     .header .header_nav{
         justify-content: space-between;
-        margin: 0 16px;
+        margin: 0 50px;
     }
 
     .header .header_nav .mobile-controls{
@@ -645,6 +645,11 @@ textarea{
 }
 
 @media (max-width: 900px) {
+    .header .header_nav{
+        justify-content: space-between;
+        margin: 0 16px;
+    }
+
     .main .slide{
         background-position: -430px;
     }
