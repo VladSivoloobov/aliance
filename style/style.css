@@ -37,7 +37,8 @@ a{
 
 .header .header_nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 50px;
     align-items: center;
     height: 90px;
 }
