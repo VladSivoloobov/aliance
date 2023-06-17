@@ -298,6 +298,16 @@ a{
     margin-bottom: 8px;
 }
 
+.main .address-with-form .right-side form input:not(input[type="submit"]), textarea{
+    padding: 0 10px;
+    font-family: WorkSans;
+    color: #142B35;
+}
+
+textarea{
+    padding-top: 10px;
+}
+
 .main .address-with-form .right-side .phone-input, 
 .main .address-with-form .right-side .name-input,
 .main .address-with-form .right-side .line-2,
