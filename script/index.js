@@ -7,7 +7,17 @@ hamburgerMenu.addEventListener("click", (e) => {
 const hamburgerCloseButton = document.querySelector(".hamburger-close");
 
 hamburgerCloseButton.addEventListener("click", () => {
-  document.body.classList.toggle("hamburger-toggled");
+  document.body.classList.add("hamburger-closed");
+  const hamburgerOverlay = document.querySelector(".hamburger-menu");
+
+  hamburgerOverlay.addEventListener(
+    "animationend",
+    () => {
+      document.body.classList.toggle("hamburger-toggled");
+      document.body.classList.remove("hamburger-closed");
+    },
+    { once: true }
+  );
 });
 
 const adventages = document.querySelector(".advantages_grid");
