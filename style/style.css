@@ -615,14 +615,42 @@ textarea{
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 90px;
+        bottom: 10px;
+    }
+
+    body.hamburger-toggled .header {
+        height: 100%;
+        animation: headerScale 0.2s;
+    }
+
+    body.hamburger-toggled.hamburger-closed .header{
+        height: 90px;
+        animation: headerScaleReverse 0.2s;
+    }
+
+    @keyframes headerScaleReverse {
+        from{
+            height: 100%;
+        }
+        to{
+            height: 90px;
+        }
+    }
+
+    @keyframes headerScale {
+        from{
+            height: 90px;
+        }
+        to{
+            height: 100%;
+        }
     }
 
     body.hamburger-toggled .header .header_nav .navigation{
         position: absolute;
         flex-direction: column;
         display: flex;
-        height: 100vh;
+        height: 100%;
         top: 0;
         bottom: 0;
         background-color: white;
@@ -631,7 +659,7 @@ textarea{
         font-size: 10px;
         z-index: 1;
         justify-content: center;
-        animation: hamburgerMenuShowed 0.2s;
+        animation: hamburgerMenuShowed 0.5s;
     }
 
     body.hamburger-toggled .header .header_nav .nav_links{
