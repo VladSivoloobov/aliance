@@ -2,13 +2,14 @@ const hamburgerMenu = document.querySelector(".hamburger");
 
 hamburgerMenu.addEventListener("click", (e) => {
   document.body.classList.toggle("hamburger-toggled");
+  document.querySelector(".header_nav").classList.add("hamburger-menu");
 });
 
 const hamburgerCloseButton = document.querySelector(".hamburger-close");
 
 hamburgerCloseButton.addEventListener("click", () => {
   document.body.classList.add("hamburger-closed");
-  const hamburgerOverlay = document.querySelector(".hamburger-menu");
+  const hamburgerOverlay = document.querySelector(".navigation");
 
   hamburgerOverlay.addEventListener(
     "animationend",
