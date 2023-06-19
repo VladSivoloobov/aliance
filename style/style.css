@@ -576,6 +576,14 @@ textarea{
         align-items: center;
     }
 
+    body.hamburger-toggled.hamburger-closed .hamburger-close{
+        display: none;
+    }
+
+    body.hamburger-toggled.hamburger-closed .hamburger{
+        display: flex;
+    }
+
     .header .header_nav .hamburger .hamburger_line{
         width: 40px;
         height: 2px;
